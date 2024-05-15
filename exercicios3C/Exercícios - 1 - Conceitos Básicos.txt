@@ -1,0 +1,157 @@
+Atividade 1
+
+1. Indique qual o tipo dos seguintes dados (Inteiro, Decimal, String ou Booleano): 
+-456 (Inteiro)
+false (Booleano)
+“0.87”(String)
+1.67   (Decimal)
+“Casa 8”  (String)
+0 (Inteiro)
+1000 (Inteiro)
+true (Booleano)
+“-900” (String)
+3 (Inteiro)
+0.0 (Decimal)
+-3.1415 (Decimal)
+32150 (Inteiro)
+128288 (Inteiro)
+“false” (String)
+
+
+Atividade 2)a)
+*/
+<?php 
+$num1 = 10;
+$num2 = 4;
+
+$resultado = $num1 / $num2;
+
+echo $resultado . "\n";
+echo $num1 % $num2;
+
+?>
+
+Atividade 2)b)
+
+<?php 
+$a = readline("Digite um numero") . "\n";
+$b = readline("Digite um numero") . "\n";
+$c = readline("Digite um numero") . "\n";
+$d = readline("Digite um numero") . "\n";
+
+$peso = 1 + 2 + 3 + 4;
+
+$soma = ($a*1) + ($b*2) + ($c*3) + ($d*4);
+
+        echo $soma / $peso;
+
+?>
+
+c) 
+
+<?php 
+$num1 = 54;
+
+$pca = 54 * 1 / 100 . "\n";
+
+echo $pca;
+
+?>
+
+D) 
+
+<?php 
+$salario = readline("digite seu salario minimo");
+$qtdgasta = readline(" Qual a quantidade gasta em sua redidencia");
+
+$ql100 = $salario / 7;
+
+$ql1 = $ql100 / 100;
+echo "cada quilowats custa: R$" . round($ql1 , 2) . "\n";
+$valor  = $ql1 * $qtdgasta;
+echo "O valor a ser apgo pelos kilowats foi de R$" . round($valor, 2 );
+$desconto = $valor / 10;
+echo "o valor a ser pago com desconto é: " . round($valor - $valor, 2 );
+?>
+
+e) 
+<?php 
+$b = readline("Digite a base");
+$h = readline("Digite a altura");
+
+// perimetro
+$P = 2* ($b+$h);
+
+echo "Perimetro: $P \n";
+
+// area
+$A = $b * $h;
+echo "Area é: $A \n";
+
+//diagonal
+$D = sqrt(pow($b, 2) + pow($h, 2));
+echo "a digonal é " . $D;
+?>
+
+F)
+
+<?php 
+$b = readline("Digite a base");
+$h = readline("Digite a altura");
+
+//area triangulo
+
+$A = ($b * $h) / 2;
+
+echo "A area é." . $A;
+?>
+
+G)
+
+<?php
+$d = readline("Digite a Diafonal 1:");
+$D = readline("Digite a Diagonal 2:");
+
+$A = ($D * $d) / 2;
+echo "A area do losango é:" . $A;
+?>
+
+h)
+
+<?php
+$a = readline("Digite o numerador 1:");
+$b = readline("Digite o denominador 2:");
+
+$c = $a / $b;
+
+echo "número decimal: " . $c;
+?>
+
+i) 
+<?php
+$hora = 5;
+
+$minutosAtuais = 45;
+
+$minutos_decorridos = ($hora * 60) + $minutosAtuais;
+
+echo "Minutos passados desde o início do dia: " . $minutos_decorridos;
+
+?>  
+
+j)  
+
+<?php
+$num_carros_vendidos = readline( "Número de carros vendidos");
+$valor_vendas_total = readline( "Valor total das vendas"); 
+$salario_fixo = readline( "Salário fixo"); 
+$comissao_por_carro = 500;
+
+$comicao_vendas = 0.05 * $valor_vendas_total;
+
+$salario_final = $salario_fixo + ($comissao_por_carro * $num_carros_vendidos) + $comissao_vendas;
+
+echo "O salário final do vendedor é: R$ " . number_format($salario_final, 2);
+
+
+?>  
