@@ -155,3 +155,103 @@ echo "O salário final do vendedor é: R$ " . number_format($salario_final, 2);
 
 
 ?>  
+
+
+
+                Exercícios - 2 - Condicionais
+
+
+                        Atividade 1
+
+<?php
+$b = readline("Digite um numero:");
+
+if ($b > 10) {
+    
+    echo"É maior que 10!";
+}
+
+else {
+    echo "Não é maior que 10";
+}
+?>  
+
+                        Atividade 2
+
+
+<?php
+$b = readline("Digite um numero");
+
+if ($b > 0) {
+    
+    echo"É posiivo";
+}
+
+else {
+    echo "Não é Positivo";
+}
+?>  
+
+
+                        Atividade 3
+
+
+<?php
+
+$maca = 1.30;
+$maca2 = 1.00;
+
+$quantida = readline("Digite a quantidade de maças");
+
+
+if( $quantida < 12 ) {
+    $custo = $quantida * $maca;
+} 
+
+else {
+    $custo = $quantida * $maca2;
+}
+
+echo "O preço da compra de $quantida é: R$ $custo"
+?>  
+
+
+                        Atividade 4
+
+
+<?php
+$nota1 = readline("digite a primeirota nota:");
+$nota2 = readline("digite a segunda nota:");
+
+$resultado = $nota1 + $nota2 / 2;
+
+if ($resultado > 60) {
+    echo"aprovado";
+}
+
+else {
+    echo "reprovado";
+}
+?>  
+
+
+                        Atividade 5
+
+<?php
+
+$anoNascimento = readline("digite seu ano de nascimento"); 
+
+
+$anoAtual = date("Y");
+$idade = $anoAtual - $anoNascimento;
+
+$podeVotar = ($idade >= 16) ? "Sim" : "Não";
+
+$podeTirarHabilitacao = ($idade >= 18) ? "Sim" : "Não";
+
+echo "Idade: $idade anos\n";
+echo "Pode votar? $podeVotar\n";
+echo "Pode tirar a Carteira de Habilitação? $podeTirarHabilitacao\n";
+?>
+
+                        Atividade 6
