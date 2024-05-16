@@ -31,7 +31,7 @@ echo $num1 % $num2;
 
 ?>
 
-Atividade 2)b)
+b)
 
 <?php 
 $a = readline("Digite um numero") . "\n";
